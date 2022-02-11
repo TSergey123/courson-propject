@@ -1,4 +1,5 @@
 module.exports = {
-  publicPath: '/courson-propject/'
-  
+  publicPath: process.env.NODE_ENV === 'production' ?
+    '/courson-propject/' :
+    '/'
 }
